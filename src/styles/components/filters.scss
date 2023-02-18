@@ -1,0 +1,15 @@
+.filters__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: rem(31);
+
+  @include tablet {
+    justify-content: space-between;
+  }
+
+  @include desktop {
+    flex-direction: row;
+
+    align-items: center;
+  }
+}

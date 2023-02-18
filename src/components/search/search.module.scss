@@ -1,0 +1,49 @@
+@import '../../styles/mixins';
+
+.wrapper {
+  position: relative;
+  min-height: 48px;
+  margin: 15px 15px 25px;
+  @include desktop {
+    margin: 0;
+  }
+}
+
+.icon {
+  position: absolute;
+  height: 22px;
+  left: 14px;
+  opacity: 0.3;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 22px;
+}
+
+.input {
+  outline: none;
+  min-height: 48px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 12px 40px 12px 42px;
+  width: 250px;
+
+  @include desktop {
+    width: 400px;
+  }
+
+  &:focus {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+}
+
+.clear {
+  position: absolute;
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  opacity: 0.3;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}

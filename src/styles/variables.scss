@@ -1,0 +1,16 @@
+$fontFamily: 'Proxima Nova', sans-serif;
+$fontSize: 16px;
+$fontWeight: 400;
+$whiteColor: #ffffff;
+$blackColor: #2c2c2c;
+$orangeColor: #ffdf8c;
+$accentColor: #fe5f1e;
+$grayColor: #f1f1f1;
+$darkGrayColor: #8d8d8d;
+
+//REM converter
+@use 'sass:math';
+@function rem($px) {
+  $result: math.div($px, 16) + rem;
+  @return $result;
+}

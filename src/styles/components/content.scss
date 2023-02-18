@@ -1,0 +1,20 @@
+.content {
+  padding-top: rem(32);
+  padding-bottom: rem(150);
+}
+
+.content__title {
+  font-weight: 700;
+  font-size: rem(32);
+  line-height: rem(39);
+  letter-spacing: 0.01em;
+  color: $blackColor;
+}
+
+.content__items {
+  padding-top: rem(35);
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: rem(65) rem(35);
+}

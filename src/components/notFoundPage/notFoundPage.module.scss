@@ -1,0 +1,35 @@
+@import '../../styles/variables.scss';
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.title {
+  font-size: rem(32);
+  font-weight: 700;
+  line-height: rem(39);
+  margin-bottom: 50px;
+
+  svg {
+    width: rem(29);
+    height: rem(29);
+    margin-right: rem(17);
+  }
+}
+
+.back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: rem(16);
+  line-height: rem(18);
+  color: $darkGrayColor;
+  background: $whiteColor;
+  border: 1px solid #c7c5c5;
+  border-radius: 30px;
+  padding: rem(17);
+  min-width: 210px;
+  margin-bottom: 10px;
+}

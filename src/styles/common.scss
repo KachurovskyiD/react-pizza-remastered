@@ -1,0 +1,54 @@
+html {
+  font-size: 14px;
+
+  @include tablet {
+    font-size: $fontSize;
+  }
+}
+
+#root {
+  position: relative;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: 1.2;
+  color: $blackColor;
+  // overflow-x: hidden;
+  min-width: 320px;
+  // font-variant-numeric: lining-nums;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex: 0 0 auto;
+}
+
+.button {
+  display: block;
+  max-height: 48px;
+  background-color: $accentColor;
+  border-color: $accentColor;
+  border-radius: 30px;
+  color: $whiteColor;
+  font-weight: 700;
+  line-height: 19px;
+  transition: all 0.3s;
+  &:hover {
+    background-color: #e44202;
+  }
+}
+
+*::selection {
+  color: $blackColor;
+  background: $accentColor;
+}
